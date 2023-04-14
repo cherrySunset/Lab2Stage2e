@@ -11,7 +11,7 @@ public class Material {
     }
 
     public Material() {
-        this( null,0);
+        this(null, 0);
     }
 
 
@@ -19,7 +19,7 @@ public class Material {
         return density;
     }
 
-      public String getName() {
+    public String getName() {
         return name;
     }
 
