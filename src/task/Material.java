@@ -11,7 +11,7 @@ public class Material {
     }
 
     public Material() {
-        this( "",0);
+        this( null,0);
     }
 
 
