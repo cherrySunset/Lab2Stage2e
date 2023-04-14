@@ -2,8 +2,8 @@ package task;
 
 public class Material {
 
-    private String name;
-    private double density;
+    private final String name;
+    private final double density;
 
     public Material(String name, double density) {
         this.name = name;
@@ -11,6 +11,7 @@ public class Material {
     }
 
     public Material() {
+        this( "",0);
     }
 
 
@@ -18,7 +19,7 @@ public class Material {
         return density;
     }
 
-    public String getName() {
+      public String getName() {
         return name;
     }
 

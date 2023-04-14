@@ -40,7 +40,11 @@ public class Subject {
     }
 
     public double getMass() {
-        return material.getDensity() * volume;
+        if (material != null) {
+            return material.getDensity() * volume;
+        }
+        return 0;
+
     }
 
     public String toString() {
@@ -48,7 +52,7 @@ public class Subject {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(new Subject("", null, 0));
     }
 
 }
